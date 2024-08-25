@@ -1,0 +1,91 @@
+.footer{
+background-color: rgba(5, 65, 48, 1);
+padding: 70px 0;
+}
+footer.footer .row {
+display: flex;
+flex-wrap: wrap;
+}
+.footer-col.first-col {
+display: flex;
+align-items: center;
+justify-content: left;
+}
+.footer-col{
+flex:1;
+padding: 0 15px;
+}
+
+.footer-col ul li:not(:last-child){
+margin-bottom: 12px;
+}
+.footer-col>h4 {
+font-size: 14px;
+}
+.footer-col ul li a{
+font-size: 12px;
+text-transform: uppercase;
+color: #ffffff;
+text-decoration: none;
+font-weight: 400;
+color: rgba(255, 255, 255, 1);
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;  
+}
+.footer-col ul {
+    margin: 14px 0 0;
+padding: 0;
+list-style: none;
+}
+
+.footer-underline {width: 100%;display: block;height: 2px;position: relative;margin-top: 2px;}
+h4.footer-title {position: relative;}
+.footer-underline:after {background: rebeccapurple;}
+.footer-underline:after {content: '';width: 100%;left:0;height: 2px;background: rgba(255, 189, 0, 1);position: absolute;opacity: 1;z-index: 1;max-width: 50px;}
+.footer-underline:before {content: '';height: 2px;position: absolute;z-index: 1;opacity: 20%;background: rgba(243, 243, 243, 1);position: absolute;left: 0;
+right: 0;width: 100%;max-width: 110px;}
+
+.middle-areas {
+flex: 0 0 50%;
+display: flex;
+justify-content: space-around;
+}
+
+.middle-areas>div {flex:0 0 auto;}
+.footer-col.last-itmes .footer-underline:before {
+max-width: 173px;
+}
+/*responsive*/
+
+@media(min-width: 768px){
+.footer-col.last-itmes {text-align: right;}
+.footer-col.last-itmes h4.footer-title {display: inline-block;}
+.footer-col.last-itmes img.zimpler-img {margin: 0 0 0 auto;}
+}
+
+@media(max-width: 767px){
+
+.footer-col ul li:last-child {
+margin-bottom: 0;
+}
+.footer-col.first-col, .middle-areas {
+flex: 0 0 100%;
+}
+.footer-col.first-col,.middle-areas {flex: 0 0 100%;}
+.middle-areas {justify-content: space-between;}
+.middle-areas .footer-col {padding: 10px 0;}
+.footer-col {
+padding: 0;
+ flex: 1;
+margin-bottom: 30px;
+}
+.footer{padding:30px 0;}
+.footer-col.last-itmes {
+margin-bottom: 0;
+}
+
+}
